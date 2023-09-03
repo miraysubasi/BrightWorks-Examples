@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dis-kutu {
+            width: 250px;
+            height: 250px;
+            background: cornflowerblue;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            /* position: static; */
+            position: fixed;
+            /* position: fixed; */
+            /* position: absolute; */
+
+        }
+
+        .ic-kutu {
+            background-color: red;
+            color: wheat;
+            padding-left: 6px;
+            padding-right: 3px;
+            padding-bottom: 3px;
+            padding-top: 3px;
+            border-radius: 3px;
+            position: absolute;
+            top: 5px;
+            right: 10px;
+        }
+
+        .baslık {
+            position: absolute;
+            top: 5px;
+            left: 10px;
+        }
+
+        .kampanya {
+            position: sticky;
+            top: 20px;
+        }
+
+        .box1,
+        .box2 {
+            border: 1px solid black;
+            width: 150px;
+            height: 150px;
+        }
+
+        .box1 {
+            background-color: red;
+            color: white;
+            position: absolute;
+            z-index: 526;
+        }
+
+        .box2 {
+            background-color: green;
+            color:white ;
+            
+            position: absolute;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        Static: Olağan akışta kalır, top, left vb etkilenmez. 
+        Relative: Olağan akışta kalır, top, left vb etkilenir.
+        fixed: olağan akışta kalmaz ve yine top, left den etkilenir.
+        absolute:Olağan akışta kalmaz, top, left den etkilenir.kullanırsam 99% relative in içinde kullanır
+        sticky:Duruma göre olağana akışta kalır ya da kalmaz,
+        top, left vb den etkilenir.Verilen değerlere gelene kadar static davranış sergiler, o değerlere geldiği an fixed davranış sergiler.
+
+    -->
+    <h1>Position</h1>
+    <div class="dis-kutu">
+        Absolute
+        <div class="ic-kutu">x</div>
+    </div>
+    <h1>Position</h1>
+    <h1 class="kampanya">Kampanya</h1>
+    <h1>Position</h1>
+    <h1>Position</h1>
+
+    <div class="container">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+    </div>
+
+    <h1>Position</h1>
+    <h1>Position</h1>
+    <h1>Position</h1>
+    <h1>Position</h1>
+    <h1>Position</h1>
+    <h1>Position</h1>
+    <h1>Position</h1>
+    <h1>Position</h1>
+    <h1>Position</h1>
+    <h1>Position</h1>
+    <h1>Position</h1>
+    <h1>Position</h1>
+    <h1>Position</h1>
+    <h1>Position</h1>
+    <h1>Position</h1>
+</body>
+
+</html>
