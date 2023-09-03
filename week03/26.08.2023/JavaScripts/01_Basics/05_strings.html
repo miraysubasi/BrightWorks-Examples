@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let kurs = "Bahçeşehir Üniversitesi Wissen Academie Full Stack Programlama Eğitimi";
+
+        let sonuc;
+        sonuc = kurs.toLowerCase();
+        sonuc = kurs.toLocaleLowerCase();
+        sonuc = kurs.toUpperCase();
+        sonuc = kurs.toLocaleUpperCase();
+        // console.log(sonuc);
+
+        //ödev: bir metnin içindeki her sözcüğün ilk harfini büyük,
+        //geri kalanalarını küçük harfe dönüştüren kodu yazınız.
+        //Ör:metin => wissen aKaDEMie --> Wissen Academie
+
+        sonuc = kurs.length;
+        sonuc = kurs[0];
+        sonuc = kurs[19];
+        
+        sonuc = kurs.slice(0,5);
+        sonuc = kurs.slice(24, 30);
+        sonuc = kurs.slice(24);
+        //ödev: js teki substring fonksiyonunu araştırıp, slice ile 
+        //arasındaki farkları bulunuz.Modern Java Script 
+        sonuc = kurs.replace(" ","-");
+
+        sonuc = kurs.trim();
+        sonuc = kurs.trimStart();
+        sonuc = kurs.trimEnd();
+        
+        sonuc = kurs.indexOf("b");
+
+        sonuc = kurs.slice(0, kurs.indexOf(" "));
+
+        sonuc = kurs.split(" ");
+
+        sonuc = kurs.startsWith("B");
+        sonuc = kurs.endsWith("i");
+        sonuc = kurs.includes("Bahçeşehir");
+        sonuc = kurs.includes("x");
+
+        //bir değişkenin içinde yer alan metnin toplam kaç KELİMEden oluştuğunu bulup konsola yazdiran kodu yazınız.
+
+        let cumle = prompt("Lütfen bir cümle giriniz:");
+        sonuc = cumle.split(" ").length;
+
+
+        console.log(sonuc);
+    </script>
+</body>
+</html>
