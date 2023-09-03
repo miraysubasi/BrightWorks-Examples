@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            /* background-image: url("https://picsum.photos/id/237/100/100"); */
+            /* background-repeat: no-repeat; */
+            /* background-repeat: repeat-x; */
+            /* background-repeat: repeat-y; */
+            /* background-repeat: repeat; */
+
+            /* background-image: url("https://picsum.photos/id/237/200/200");
+            background-repeat: no-repeat;
+            background-position: top right;
+            margin-right: 200px;
+            background-attachment: fixed; */
+        }
+
+        #first-paraghraph {
+
+            background-image: url("https://picsum.photos/id/237/200/200");
+            background-repeat: no-repeat;
+            /* background-size: contain; */
+            background-size: cover;
+
+        }
+
+        #second-paraghraph {
+            width: 400px;
+            height: 300px;
+            overflow: hidden;
+            border: 10px solid red;
+            padding: 20px;
+            background-image: url("https://picsum.photos/id/237/200/200");
+            background-repeat: no-repeat;
+            /* background-origin: padding-box; */
+            /* background-origin: border-box; */
+            background-origin: content-box;
+
+        }
+
+        div {
+            width: 200px;
+            height: 50px;
+            background-color: aquamarine;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* 
+        #box1 {
+            opacity: 1;
+        }
+
+        #box2 {
+            opacity: 0.8;
+        }
+
+        #box3 {
+            opacity:0.6;
+        }
+
+        #box4 {
+            opacity: 0.4;
+        }
+
+        #box5 {
+            opacity: 0.2;
+        }
+
+        #box6 {
+            opacity: 0;
+        } */
+
+        #box1 {
+            background-color:rgba(20, 180, 132, 1) ;
+        }
+
+        #box2 {
+            background-color:rgba(20, 180, 132, 0.8) ;
+        }
+
+        #box3 {
+            background-color:rgba(20, 180, 132, .6) ;
+        }
+
+        #box4 {
+            background-color:rgba(20, 180, 132, .4) ;
+        }
+
+        #box5 {
+            background-color:rgba(20, 180, 132, 0.2);
+        }
+
+        #box6 {
+            background-color:rgba(20, 180, 132, 0) ;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Background</h1>
+    <div class="box1">Opacity 1</div>
+    <div class="box2">Opacity 2</div>
+    <div class="box3">Opacity 3</div>
+    <div class="box4">Opacity 4</div>
+    <div class="box5">Opacity 5</div>
+    <div class="box6">Opacity 6</div>
+    <p id="first-paraghraph">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus illum, nam dignissimos perspiciatis excepturi
+        officiis ex dolore a ut culpa quidem voluptates, fugit, nesciunt velit ducimus magni consectetur ullam earum
+        quia molestias sed assumenda. Sint quas aliquam dolorum qui deleniti ex cumque nisi magnam doloremque vel quod
+        placeat corrupti mollitia delectus sunt culpa tempora inventore consequuntur, ab repellendus dolores. Autem
+        explicabo dolore recusandae, assumenda libero cumque sequi facere error ex iure. Minus, fugiat, distinctio et
+        vitae eaque rerum aliquam atque, quas voluptatum corporis impedit vel eveniet accusamus officia dolorem! Quasi
+        facere provident ex cupiditate ut nisi minima reiciendis sunt esse!
+    </p>
+    <div id="#second-paraghraph"></div>
+</body>
+
+</html>
