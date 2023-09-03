@@ -1,0 +1,147 @@
+/* Bu satırla google fontlardan seçmiş olduğumuz yazı tipi ve kalınlıklarını bu dosyaya import etmiş olduk. Yani artık bu yazı tiplerini projemizde kullanabiliriz. */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Dosis, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+#main-header {
+    height: 100px;
+    background-color: tomato;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+#brand {
+    color: aliceblue;
+    font-size: 60px;
+    font-weight: 600;
+    width: 400px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#main-nav {
+    width: calc(100% - 220px);
+}
+
+#main-nav-items {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 130px;
+    height: 40px;
+    }
+
+.main-nav-item {
+    background-color: white;
+}
+
+.menu-item a {
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-nav-item a {
+    color: tomato;
+}
+
+.main-nav-item a:hover {
+    background-color: tomato;
+    color: white;
+    border: 1px solid white;
+    transition: all .25s;
+}
+
+#login-button {
+    background-color: tomato;
+}
+
+#login-button a {
+    color: white;
+    height: 100%;
+    border: 1px solid white;
+}
+
+#login-button a:hover {
+    background-color: rgb(244, 239, 239);
+    color: tomato;
+    border: none;
+    transition: all .25s;
+}
+
+#intro {
+    /* 
+        ÖDEV: Burada yer alan arka plan resmini biraz daha karanlık ya da bulanık gösterin.
+    */
+    background-image: url("/images/bg_home.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    padding: 25px;
+    color: navy;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#intro h1 {
+    background-color: rgba(14, 14, 14, 0.5);
+    display: inline;
+    padding: 15px 30px;
+    text-align: center;
+    color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 6px 2px 5px rgb(53, 53, 53);
+}
+
+#content {
+    display: flex;
+}
+
+.content-item {
+    margin: 15px;
+    padding: 25px;
+}
+
+.content-item h2 {
+    color: tomato;
+    /* margin-bottom: 15px; */
+    /* padding-bottom: 15px; */
+}
+
+.content-item div {
+    height: 15px;
+}
