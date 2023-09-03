@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        let sonuc;
+        sonuc = Number('10.6');
+        sonuc = parseInt('10.9');
+        sonuc = parseFloat('10.9');
+        sonuc = parseInt('10a1');
+
+        let sayi = 151.47857864;
+        sonuc = sayi.toFixed(2);
+        sonuc = sayi.toPrecision(5);
+
+        sonuc = Math.round(sayi);
+        sonuc = Math.ceil(sayi);
+        sonuc = Math.floor(sayi);
+
+        sonuc = Math.pow(3,2);
+        sonuc = Math.pow(2,8);
+        sonuc = Math.abs(-5);
+        
+
+        console.log(sonuc, typeof sonuc);
+    </script>
+</body>
+
+</html>
