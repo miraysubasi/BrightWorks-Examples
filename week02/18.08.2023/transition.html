@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: aquamarine;
+            padding: 5px;
+            width: 150px;
+            font-size: 20px;
+        }
+        div:hover{
+            background-color: red;
+            color: white;
+            /* width: 250px; */
+            /* transition-property: all;
+            transition-duration: 2s;
+            transition-timing-function: ease-in;
+            transition-delay: .5s; */
+
+            transition: all .3s ease-in .5s;
+            
+
+        }
+        ul{
+            list-style-type: none;
+
+        }
+        ul li{
+            display: inline-block;
+            width: 80px;
+            cursor: pointer;
+            margin: 10px;
+            border-bottom: 1px solid gray;
+        }
+        ul li:hover{
+            color: blue;
+            border-bottom: 1px solid blue;
+            transition: all 0.3s ease-in;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Transition
+    </div>
+    <ul class="menu">
+        <li>Anasayfa</li>
+        <li>Ürünler</li>
+        <li>Kategoriler</li>
+        <li>İletişim</li>
+        <li>Giriş Yap</li>
+
+    </ul>
+</body>
+</html>
