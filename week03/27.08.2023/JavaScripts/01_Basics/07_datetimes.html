@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        let sonuc;
+
+        let simdi = new Date();
+        sonuc = simdi;
+        sonuc = simdi.getDate();
+        sonuc = simdi.getDay();
+        sonuc = simdi.getMonth();
+        sonuc = simdi.getFullYear();
+        sonuc = simdi.getHours();
+
+        let dogumTarihi = new Date(1994, 0, 5);
+        sonuc = dogumTarihi;
+        // sonuc = tarih.getMonth();
+        sonuc = dogumTarihi.setFullYear(2023);//Her tarihin sayılsal bir karşılığı vardır.Biz nasıl istiyorsak, o biçimde gösterebileceğiz.
+        let farkMs = simdi - dogumTarihi;
+        let farkSn = farkMs / 1000;
+        let farkDk = farkSn / 60;
+        let farkSa = farkDk / 60;
+        let farkGun =farkSa / 24;
+
+        console.log(farkGun);
+    </script>
+</body>
+
+</html>
