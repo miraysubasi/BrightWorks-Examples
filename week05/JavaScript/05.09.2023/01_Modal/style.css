@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    height: 150px;
+
+}
+
+#title {
+    color: tomato;
+    font-weight: normal;
+}
+
+#btn-save {
+    color: white;
+    background-color: green;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#btn-save:hover {
+    opacity: .8;
+
+}
+
+.main-modal {
+    background-color: rgba(0, 0, 0, .75);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modal {
+    background-color: white;
+    width: 500px;
+    height: 200px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 150px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.modal-header-title {
+    color: tomato;
+}
+
+.btn-modal-header-close {
+    font-size: 24px;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+.btn-modal-header-close:hover {
+    color: gray;
+    font-size: 25px;
+
+}
+
+.modal-content {
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.modal-content-text {
+    font-weight: normal;
+
+}
+
+.modal-footer {
+    text-align: end;
+}
+
+.btn-modal-footer-save {
+    color: white;
+    background-color: rgb(33, 11, 199);
+    padding: 8px 14px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+
+}
