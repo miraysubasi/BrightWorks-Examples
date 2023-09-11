@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+        }
+
+        #text {
+            color: tomato;
+            font-weight: bold;
+            font-size: 20px;
+
+        }
+
+        p {
+            color: white;
+            background-color: brown;
+        }
+
+        p div {
+            color: yellowgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <span id="text">Wissen Academie1</span>
+    <span id="text">Wissen Academie2</span>
+    <span id="text">Wissen Academie3</span>
+    <div class="box"></div>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem maiores nisi aperiam ullam illo amet natus,
+            deleniti fugiat aliquam sint nostrum molestias velit quis commodi sed laudantium inventore laboriosam
+            doloribus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, ad dicta, quos commodi magni repudiandae
+            aliquid fugiat deserunt minus praesentium, eaque modi consequuntur eos consectetur dolore doloribus qui
+            saepe debitis?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore aliquid maxime necessitatibus inventore
+            commodi iste pariatur laudantium voluptate minus, reiciendis vel debitis sit ipsam assumenda eum similique
+            quis dolorum adipisci.</p>
+    </div>
+    <button onclick="changeText()">Text Change</button>
+    <button onclick="changeBox()">Box Change</button>
+    <button onclick="changeParagraph()">Paragraph Change</button>
+
+    <script>
+        function changeText() {
+            $("#text").css("color", "navy");
+        }
+        function changeBox() {
+            $(".box").css("background-color", "red");
+        }
+         function changeParagraph(){
+            $("div p").css("background-color", "orange");
+         }
+    </script>
+</body>
+
+</html>
