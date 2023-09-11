@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <p id="test">TEST</p>
+    <button onclick="helloworld()">Tıkla</button>
+    <script>
+        // function helloworld(){
+        //     const text = document.getElementById("test");
+        //     text.innerText ="Hello World";
+        // }
+        function helloworld(){
+            $("#text").text("Hello World");
+            //jquery yazacaksak dolar($) işareti kullanacağız.
+        }
+    </script>
+</body>
+</html>
