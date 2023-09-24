@@ -1,0 +1,35 @@
+@model List<Product>
+@*
+/@işareti bir Razor Operatör olarak adlandırılır.
+/@ işareti c# kodu yazacağımızı belirtmek için kullanılır
+
+*@
+
+
+<h1>Product Main Page</h1>
+
+@* <p>@Model[0].Name</p> *@
+
+@* @foreach(Product p in Model){
+<div>
+<h3 class="text-danger"> @p.Name</h3>
+<p>@p.Price</p>
+</div>
+<hr>
+} *@
+
+<table class="table table-sm table-bordered table-hover table-primary">
+    <tr>
+       <th>ID</th>
+       <th>Name</th>
+       <th>Price</th>
+    </tr>
+    @for (int i = 0; i < Model.Count; i++)
+    {
+        <tr>
+            <td>@Model[i].ID</td>
+            <td>@Model[i].Name</td>
+            <td>@Model[i].Price</td>
+        </tr>
+    }
+</table>

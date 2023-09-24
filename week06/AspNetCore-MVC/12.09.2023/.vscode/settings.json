@@ -1,0 +1,25 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "[!P]*/**": true,
+        "P[!0]*/**": true,
+        "P0[!1]*/**": true,
+        "P01[!_]*/**": true,
+        "P01_[!f]*/**": true,
+        "P01_f[!i]*/**": true,
+        "P01_fi[!r]*/**": true,
+        "P01_fir[!s]*/**": true,
+        "P01_firs[!t]*/**": true,
+        "P01_first[!M]*/**": true,
+        "P01_firstM[!V]*/**": true,
+        "P01_firstMV[!C]*/**": true,
+        "P01_firstMVC[!A]*/**": true,
+        "P01_firstMVCA[!p]*/**": true,
+        "P01_firstMVCAp[!p]*/**": true
+    }
+}

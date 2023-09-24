@@ -2,9 +2,9 @@ const slides = document.querySelectorAll(".slide");
 const btnPrev = document.getElementById("prev");
 const btnNext = document.getElementById("next");
 
-const autoSlider = true;
-const intervalTime = 3000;
-const sliderInterval;
+let autoSlider = true;
+let intervalTime = 3000;
+let sliderInterval;
 
 btnPrev.addEventListener("click", function () {
     prevSlide();
@@ -18,10 +18,10 @@ btnNext.addEventListener("click", function () {
 function prevSlide() {
     let activeSlide = document.querySelector(".active");
     activeSlide.classList.remove("active");
+    //Eğer activeSlide.previousElementSibling null değilse
     if (activeSlide.previousElementSibling) {
         activeSlide.previousElementSibling.classList.add("active");
     } else {
-        // console.log(slides.length-1)
         slides[slides.length - 1].classList.add("active");
     }
 }
@@ -36,15 +36,14 @@ function nextSlide() {
     }
 }
 
-// setInterval(() => {
-//     console.log("selam")
-// }, 3000);//fuction ve süre milisaniye cinsinden
 function againInterval() {
     if (autoSlider) {
         clearInterval(sliderInterval);
         sliderInterval = setInterval(nextSlide, intervalTime);
     }
-
 }
+
 againInterval();
-//başlığın altına slide süresini göster baska bir interval kullanabiliriz counterInterval diyebiliriz.
+
+//İsteğe bağlı ödev: Başlığın altına slide süresini gösterin.
+//İpucu: başka bir interval daha kullanabilirsiniz.

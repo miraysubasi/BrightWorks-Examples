@@ -1,0 +1,21 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "[!F]*/**": true,
+        "F[!i]*/**": true,
+        "Fi[!r]*/**": true,
+        "Fir[!s]*/**": true,
+        "Firs[!t]*/**": true,
+        "First[!W]*/**": true,
+        "FirstW[!e]*/**": true,
+        "FirstWe[!b]*/**": true,
+        "FirstWeb[!A]*/**": true,
+        "FirstWebA[!p]*/**": true,
+        "FirstWebAp[!i]*/**": true
+    }
+}

@@ -1,0 +1,13 @@
+@model Product
+@* tipini belirleyen @model *@
+
+@{
+    ViewData["Title"] = "Details";
+    Product product = Model;
+    @* Layout = ""; *@
+}
+<h1>Product Details</h1>
+<p>ID: @Model.ID</p>
+<p>ID: @Model.Name</p>
+<p>ID: @Model.Price</p>
+@* gönderdiğimiz veriyi gösteren @Model *@
