@@ -17,5 +17,9 @@ namespace MiniShop.MVC.Areas.Admin.Controllers
             var response = await CategoryDAL.GetAllCategories();
             return View(response.Data);
         }
+        public async Task<IActionResult> Create()
+        {
+            return View();
+        }
     }
 }
