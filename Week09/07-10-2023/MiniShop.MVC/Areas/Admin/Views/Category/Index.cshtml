@@ -11,7 +11,7 @@
           <h1>Kategorileri Yönet</h1>
         </div>
         <div class="col-sm-6 d-flex justify-content-end">
-          <a asp-area="Admin" asp-controller="Category" asp-action="Create" class="btn btn-sm btn-primary">Kategori
+          <a asp-area="Admin" asp-controller="Category" asp-action="Index" class="btn btn-sm btn-primary">Kategori
             Ekle</a>
         </div>
       </div>
@@ -43,8 +43,9 @@
                       <td>@category.Name</td>
                       <td>@category.Description</td>
                       <td>
-                        <a class="btn btn-warning btn-sm" href="">Düzenle</a>
-                        <a class="btn btn-danger btn-sm" href="">Sil</a>
+                        <a class="btn btn-warning btn-sm" asp-area="Admin" asp-controller="Category" asp-action="Düzenle"
+                          asp-route-id="@category.Id">Düzenle</a>
+                        <a class="btn btn-danger btn-sm" asp-area="Admin" asp-controller="Category" asp-action="Delete" asp-route-id="@category.Id">Sil</a>
                       </td>
                     </tr>
                   }
