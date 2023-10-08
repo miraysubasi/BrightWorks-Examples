@@ -17,7 +17,7 @@ namespace MiniShop.MVC.Models
         [JsonPropertyName("Description")]
         public string Description { get; set; }
         
-        [JsonPropertyName("IsDeleted")]
+        [JsonPropertyName("IsActive")]
         public bool IsActive { get; set; }
 
         [JsonPropertyName("IsDeleted")]
